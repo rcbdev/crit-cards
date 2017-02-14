@@ -2,7 +2,7 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 
-export default function Header(props){
+export default function Header({clearHistory}){
     const clearButton = <FlatButton label="clear" />;
 
     return (
@@ -10,6 +10,6 @@ export default function Header(props){
             title="Crit Cards"
             showMenuIconButton={false}
             iconElementRight={clearButton}
-            onRightIconButtonTouchTap={props.clearHistory} />
+            onRightIconButtonTouchTap={clearHistory} />
     );
 }
