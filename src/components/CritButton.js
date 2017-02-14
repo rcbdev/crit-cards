@@ -6,7 +6,7 @@ const buttonStyle = {
 };
 
 export default function CritButton({critMiss, attackType, addEffect}){
-    const label = critMiss + " " + attackType;
+    const label = attackType;
     return (
         <RaisedButton
             style={buttonStyle}
